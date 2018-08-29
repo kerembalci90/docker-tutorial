@@ -5,10 +5,10 @@ Install docker engine from https://docs.docker.com/docker-for-mac/install/ (For 
 Inside the folder that contains Dockerfile:
 
 - Build the docker image with the repositoryname:tagname specified.
-    docker build . -t mynode:latest
+   ``` docker build . -t mynode:latest ```
 
 - Check if the image is built.
-    docker images
+    ``` docker images ```
 
 - Run the image as a container in the engine.
     docker run -p {port}:8080 -it {imageid} node server.js
