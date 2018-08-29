@@ -1,5 +1,7 @@
 Instructions to get the container running on Docker Engine
 
+Following the tutorials from https://medium.freecodecamp.org/docker-quick-start-video-tutorials-1dfc575522a0
+
 Install docker engine from https://docs.docker.com/docker-for-mac/install/ (For Mac)
 
 Inside the folder that contains Dockerfile:
@@ -11,8 +13,8 @@ Inside the folder that contains Dockerfile:
     * ``` docker images ```
 
 3. Run the image as a container in the engine.
-    * ``` docker run -p {port}:8080 -it {imageid} node server.js ```
-    * ``` docker run -p 8000:8080 -it d8ee72ee935c node server.js (Sample) ```
+    * ``` docker run -d -p {port}:8080 {imageid} ```
+    * ``` docker run -d -p 8000:8080 d8ee72ee935c (Sample) ```
 
 4. Check the running process.
     * ``` docker ps ```
